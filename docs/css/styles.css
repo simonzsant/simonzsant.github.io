@@ -1,0 +1,206 @@
+/* to override Bootstrap styles for some things */
+@charset "UTF-8";
+
+:root {
+  --bkg-color: #333;
+  --bkg-secondary: #ffffff;
+  --shadow-color: 0deg 100% 100%;
+  --shadow-elevation-low:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.17),
+    0.4px 0.9px 1.3px -0.6px hsl(var(--shadow-color) / 0.29),
+    1px 2px 2.9px -1.2px hsl(var(--shadow-color) / 0.4);
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.18),
+    1px 2px 2.9px -0.4px hsl(var(--shadow-color) / 0.27),
+    2.3px 4.5px 6.6px -0.8px hsl(var(--shadow-color) / 0.36),
+    5px 10px 14.7px -1.2px hsl(var(--shadow-color) / 0.45);
+  --shadow-elevation-high:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.17),
+    2px 4.1px 6px -0.2px hsl(var(--shadow-color) / 0.21),
+    3.7px 7.3px 10.7px -0.4px hsl(var(--shadow-color) / 0.25),
+    5.6px 11.2px 16.4px -0.5px hsl(var(--shadow-color) / 0.29),
+    8.3px 16.6px 24.4px -0.7px hsl(var(--shadow-color) / 0.34),
+    12.1px 24.2px 35.5px -0.9px hsl(var(--shadow-color) / 0.38),
+    17.5px 35.1px 51.5px -1.1px hsl(var(--shadow-color) / 0.42),
+    25px 50px 73.4px -1.2px hsl(var(--shadow-color) / 0.46);
+}
+
+body {
+  background-color: var(--bkg-color);
+  color: white;
+  min-height: 100%;
+  height: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Source Sans Pro', Sans-Serif;
+}
+
+.jumbotron {
+  margin: 0;
+  color: white;
+  background-color: #333;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background: #191d1e;
+  /* Old browsers */
+  background: -moz-linear-gradient(0deg, #191d1e 50%, #283139 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #191d1e), color-stop(100%, #283139));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(0deg, #191d1e 50%, #283139 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(0deg, #191d1e 50%, #283139 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(0deg, #191d1e 50%, #283139 100%);
+  /* IE10+ */
+  background: linear-gradient(0deg, #191d1e 50%, #283139 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#191d1e', endColorstr='#283139', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed
+}
+
+.center-div {
+  width: 580px;
+  height: 374px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -290px;
+  margin-top: -187px;
+}
+
+.items {
+  margin: auto;
+  padding: 30px;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  font-family: 'Playfair Display', Serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 128px;
+  object-fit: cover;
+}
+
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+.link_activator{
+  backdrop-filter: blur(0px);
+}
+
+.link {
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-elevation-low);
+  transition: 0.3s;
+}
+
+.link:hover {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.link-text {
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.background--custom {
+  background-color: #FFFFFF;
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+  position: absolute;
+  overflow: hidden;
+  z-index: -3;
+  top: 0;
+  left: 0;
+}
+
+.glassy_v2 {
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+}
+
+#projector {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#brand-title {
+  font-weight: bold;
+}
+
+#borderless-top-cell {
+  border-top: 1px solid Transparent !important;
+  border-left: 1px solid Transparent !important;
+}
+
+#preloaderDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -27px;
+  margin-top: -27px;
+}
+
+#logo {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#date2014 {
+  position: absolute;
+  padding-left: 210px;
+  padding-top: 15px;
+  opacity: 0;
+  top: 303px;
+  left: 0;
+  filter: alpha(opacity=0);
+}
