@@ -67,6 +67,22 @@ html, body {
   background-attachment: fixed
 }
 
+
+.main-panel{
+  margin-top: 5%;
+}
+
+.glass-panel {
+  color: #fff;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+
 .center-div {
   width: 580px;
   height: 374px;
@@ -78,7 +94,6 @@ html, body {
 }
 
 .items {
-  margin: auto;
   padding: 30px;
   max-width: 640px;
   display: flex;
