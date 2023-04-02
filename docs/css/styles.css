@@ -23,6 +23,8 @@
     12.1px 24.2px 35.5px -0.9px hsl(var(--shadow-color) / 0.38),
     17.5px 35.1px 51.5px -1.1px hsl(var(--shadow-color) / 0.42),
     25px 50px 73.4px -1.2px hsl(var(--shadow-color) / 0.46);
+    --shadow-elevation-c:
+    inset -2px -7px 5px -1px hsl(var(--shadow-color) / 0.55);
 }
 
 body {
@@ -161,6 +163,12 @@ p.name_text {
 .social-icons a {
   color: white;
   text-decoration: none;
+}
+
+.social-icons a:hover {
+  box-shadow: var(--shadow-elevation-c), var(--shadow-elevation-medium);
+  transition: 0.3s;
+  border-radius: 100%;
 }
 
 .banner-image {
