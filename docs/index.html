@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Simon links page</title>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Genos">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
+
+
 </head>
 
 <body>
-  <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+
+  <div id="bg_glow"></div>
+  <div id="overlay"></div>
+  <canvas id="canvas"></canvas>
 
   <div class="main-panel">
     <div class="items glass-panel">
@@ -23,8 +28,13 @@
         <img src="images/headshot.jpg" alt="Simon Zalazar headshot" class="banner-image">
       </div>
 
-      <div class="name">
-        Simon Zalazar Santillan
+      <div class="banner_text">
+        <div class="name">
+          <p class="name_text" id="name_js"></p>
+        </div>
+        <div class="name">
+          <p class="name_text name_2" id="name2_js"></p>
+        </div>
       </div>
 
       <div class="social-icons">
@@ -35,23 +45,28 @@
       </div>
 
       <div class="link glassy_v2">
-        <img class="thumbnail" src="images/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png">
-
-        <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
-          —&nbsp;Paul Graham</a>
-      </div>
-      <div class="link glassy_v2">
-        <img class="thumbnail" src="images/typography.jpg">
-
-        <a class="link-text" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes —&nbsp;Matthew
-          Butterick</a>
+        <img class="thumbnail" id="img1" src="">
+        <a class="link-text" id="link1" target="_blank" href=""></a>
       </div>
 
       <div class="link glassy_v2">
-        <img class="thumbnail" src="images/071210_r16884_p646.jpg">
+        <img class="thumbnail" id="img2" src="">
+        <a class="link-text" id="link2" target="_blank" href=""></a>
+      </div>
 
-        <a class="link-text" target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
-          Life-Saving Checklist —&nbsp;The New Yorker</a>
+      <div class="link glassy_v2">
+        <img class="thumbnail" id="img3" src="">
+        <a class="link-text" id="link3" target="_blank" href=""></a>
+      </div>
+
+      <div class="link glassy_v2">
+        <img class="thumbnail" id="img4" src="">
+        <a class="link-text" id="link4" target="_blank" href=""></a>
+      </div>
+
+      <div class="link glassy_v2">
+        <img class="thumbnail" id="img5" src="">
+        <a class="link-text" id="link5" target="_blank" href=""></a>
       </div>
 
     </div>
@@ -59,7 +74,26 @@
 
   </div>
 
-
+  <script>
+    // non style related root bars
+    var namer = "Simon Zalazar Santillan";
+    var namer_2 = "App Development Class";
+    img1.src = "images/vector1.jpg";
+    link1.innerHTML = 'Week 1 Assignment';
+    link1.href = "week1/index.html"
+    img2.src = "images/vector1.jpg";
+    link2.innerHTML = "Week 2 Assignment";
+    link2.href = "#";
+    img3.src = "images/vector1.jpg";
+    link3.innerHTML = "Week 3 Assignment";
+    link3.href = "#";
+    img4.src = "images/vector1.jpg";
+    link4.innerHTML = "Week 4 Assignment"
+    link4.href = "#";
+    img5.src = "images/vector1.jpg";
+    link5.innerHTML = "Week 5 Assignment"
+    link5.href = "#";
+  </script>
 
   <script src='https://code.createjs.com/easeljs-0.7.1.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
@@ -67,6 +101,10 @@
   <script src="https://kit.fontawesome.com/8596ff4516.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+
+
+
 </body>
 
 </html>
