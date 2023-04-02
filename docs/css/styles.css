@@ -26,6 +26,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--bkg-color);
   color: white;
   min-height: 100%;
@@ -33,7 +34,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Source Sans Pro', Sans-Serif;
+  font-family: 'Genos', sans-serif;
 }
 
 .jumbotron {
@@ -47,7 +48,6 @@ html, body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
   background: #191d1e;
   /* Old browsers */
   background: -moz-linear-gradient(0deg, #191d1e 50%, #283139 100%);
@@ -67,20 +67,45 @@ html, body {
   background-attachment: fixed
 }
 
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-.main-panel{
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*Scrollbar end*/
+.main-panel {
+  position: relative;
+  /*para que el z-index tenga efecto*/
+  z-index: 10;
   margin-top: 5%;
+  padding-bottom: 2%;
 }
 
 .glass-panel {
   color: #fff;
   margin: 40px auto;
-  background-color: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
   border-radius: 15px;
   padding: 32px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
 }
 
 .center-div {
@@ -106,12 +131,26 @@ html, body {
   justify-content: center;
 }
 
+.banner_text {
+  cursor: default;
+  gap: 0px;
+}
+
+p.name_text {
+  margin: 0px;
+}
+
 .name {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
   color: white;
-  font-family: 'Playfair Display', Serif;
+  font-weight: bold;
+}
+
+.name_2 {
+  font-size: 80%;
+  font-weight: normal;
 }
 
 .social-icons {
@@ -138,7 +177,7 @@ html, body {
   object-fit: cover;
 }
 
-.link_activator{
+.link_activator {
   backdrop-filter: blur(0px);
 }
 
@@ -161,6 +200,7 @@ html, body {
   color: white;
   text-decoration: none;
   padding: 0 5px;
+  font-size: 110%;
 }
 
 .background--custom {
@@ -176,10 +216,61 @@ html, body {
 }
 
 .glassy_v2 {
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, .35);
   backdrop-filter: blur(5px);
 }
 
+/* CSS background */
+html, body {
+  background: #000;
+}
+
+#canvas {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 50%;
+}
+
+#overlay {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, .0) 10%, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 100%);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 135%;
+  width: 100%;
+}
+
+#bg_glow {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 50%;
+  height: 135%;
+  width: 100%;
+}
+
+#info {
+  z-index: 4;
+  position: absolute;
+  color: #fff;
+  top: 0px;
+  left: 0px;
+  background: rgba(60, 60, 60, .6);
+  padding: 0px;
+}
+
+#fps {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+}
+
+/* end of background scrips */
 #projector {
   position: absolute;
   top: 0px;
