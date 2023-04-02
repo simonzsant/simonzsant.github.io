@@ -1,0 +1,78 @@
+/* to override Bootstrap styles for some things */
+@charset "UTF-8";
+
+:root {
+  --bkg-color: #333;
+  --bkg-secondary: #ffffff;
+}
+
+html {
+
+}
+
+body {
+background-color: var(--bkg-color);
+color: white;
+}
+
+.jumbotron {
+  margin: 0;
+  color: white;
+  background-color: #333;
+}
+
+.table {
+  color: white;
+}
+
+.force-white{
+  background-color: white;
+}
+
+.rounded-4{
+  border-radius: 4rem!important;
+}
+
+.navbar-brand{
+  padding-right: 1em;
+}
+
+.table .bottom-th {
+  display: block;
+  position: relative;
+  width: 50%;
+  padding-top: 15%;
+  line-height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.table .top-th {
+  display: block;
+  position: relative;
+  width: 50%;
+  float: right;
+  padding-bottom: 15%;
+  line-height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.table thead th {
+  vertical-align: middle;
+  border-bottom: inherit;
+  width: 0%;
+}
+
+th.diagonalFalling {
+  background: linear-gradient(to right top, var(--bkg-color) 0%,var(--bkg-color) 50.4%,var(--bkg-secondary) 50.5%,var(--bkg-secondary) 51%,var(--bkg-color) 51.1%,var(--bkg-color) 100%);
+}
+
+
+#brand-title{
+  font-weight: bold;
+}
+#borderless-top-cell {
+  border-top: 1px solid Transparent!important;
+  border-left: 1px solid Transparent!important;
+ }

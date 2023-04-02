@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rules</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand text-center" href="#">
+      <img src="images/3971461-200.png" height="50em" alt="">
+      <span id="brand-title">Rock Paper Scissors</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      -->
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Welcome to Rock-Paper-Scissors!</h1>
+      <p class="lead">
+        From <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors" target="_blank">Wikipedia</a>:
+      </p>
+      <p>
+        Rock-paper-scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.
+      </p>
+
+      <p>
+        These shapes are:
+      </p>
+
+      <ul>
+        <li>
+          "rock" (a closed fist)
+        </li>
+
+        <li>
+          "paper" (a flat hand)
+        </li>
+
+        <li>
+          "scissors" (a fist with the index and middle fingers extended, forming a V)
+        </li>
+
+      </ul>
+
+      <p>
+        A player who decides to play rock will beat another player who has
+        chosen scissors ("rock crushes scissors" or sometimes "blunts
+        scissors"), but will lose to one who has played paper ("paper covers
+        rock"); a play of paper will lose to a play of scissors ("scissors
+        cut[s] paper"). If both players choose the same shape, the game is tied
+        and is usually immediately replayed to break the tie.
+      </p>
+
+      <table class="table table-striped text-center" border="1">
+
+        <thead>
+          <tr>
+            <th class="diagonalFalling" scope="col">
+              <span class="top-th">They play:</span>
+              <span class="bottom-th">We play:</span>
+            </th>
+            <th scope="col">Rock</th>
+            <th scope="col">Paper</th>
+            <th scope="col">Scissors</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Rock</th>
+            <td>We tie</td>
+            <td>We lose</td>
+            <td>We win</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Paper</th>
+            <td>We win</td>
+            <td>We tie</td>
+            <td>We lose</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Scissors</th>
+            <td>We lose</td>
+            <td>We win</td>
+            <td>We tie</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Originating from China and Japan, other names for the game in the
+        English-speaking world include roshambo and other orderings of the three
+        items, with "rock" sometimes being called "stone".
+      </p>
+
+      <div class="text-center">
+        <img class="force-white rounded-4" src="images/Rock-paper-scissors.svg.png">
+        <p>
+          A chart showing how the three game elements interact
+        </p>
+      </div>
+
+      <div class="text-center">
+        <img class="force-white rounded-4" src="images/Kitsune-ken_(狐拳),_Japanese_rock-paper-scissors_variant,_from_the_Genyoku_sui_bento_(1774).jpg">
+        <p>
+          Kitsune-ken was a popular Japanese rock–paper–scissors variant.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <img class="force-white rounded-4" src="images/640px-Mushi-ken_(虫拳),_Japanese_rock-paper-scissors_variant,_from_the_Kensarae_sumai_zue_(1809).jpg">
+        <p>
+          Mushi-ken, the earliest Japanese sansukumi-ken game (1809). From
+          left to right: slug (namekuji), frog (kawazu) and snake (hebi).
+        </p>
+      </div>
+
+      <p class="lead text-center">
+        <a class="btn btn-primary btn-light" href="rock.html" role="button">Play Rock</a>
+        <a class="btn btn-primary btn-light" href="paper.html" role="button">Play Paper</a>
+        <a class="btn btn-primary btn-light" href="scissors.html" role="button">Play Scissors</a>
+      </p>
+      <div class="text-center">
+        <a class="btn btn-secondary" href="rules.html" role="button">Rules</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
